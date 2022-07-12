@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --circle-count: 40;
+    --starting-size: 50px;
+    --gap: 20px;
+    --background-color: #545352;
+    --circle-color: #79C240;
+    --circle-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+.screen-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.circle {
+    box-shadow: var(--circle-shadow);
+    border-radius: 50%;
+    border: 1px solid var(--circle-color);
+    position: fixed;
+}
+
+.dynamic-border {
+    border: 1px solid var(--circle-color); 
+}
+
+.dynamic-border:hover {
+    border: 1px solid blue;
+}
